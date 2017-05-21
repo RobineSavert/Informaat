@@ -3,6 +3,7 @@
 @import '_mq';
 @import '_flexboxgrid';
 @import '_buttons';
+@import '_type';
 @import '_users';
 
 @font-face{font-family:'HUGEAvantGardeBold';src:url("../fonts/huge_agb_v5-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/huge_agb_v5-webfont.woff") format("woff"),url("../fonts/huge_agb_v5-webfont.ttf") format("truetype"),url("../fonts/huge_agb_v5-webfont.svg#svgFontName") format("svg")};
@@ -21,10 +22,6 @@ body {
   color: $color-two;
   margin: 0;
   padding: 0;
-}
-
-.magenta {
-  color: $color-four;
 }
 
 .box, .box-first, .box-large, .box-nested, .box-row {
@@ -67,40 +64,6 @@ body {
 }
 
 
-h2,
-h3,
-h4,
-h5 {
-
-  -webkit-font-smoothing: antialiased;
-}
-
-p {
-  margin-bottom: 15px;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 31px;
-  color: $color-six;
-  margin: 0 0 30px;
-}
-
-h3 {
-  font-size: 26px;
-  color: $color-six;
-  margin: 40px 0 15px;
-}
-
-h4,
-h5 {
-  font-size: 22px;
-  color: $color-six;
-  margin: 35px 0 15px;
-}
 
 ul {
   list-style: initial;
