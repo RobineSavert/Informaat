@@ -49,9 +49,9 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <link href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/css/jqueryui-editable.css" rel="stylesheet"/>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/js/jqueryui-editable.min.js"></script>
-        <script src="build/js/index.min.js"></script>
-
         <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+        <script src="https://use.fontawesome.com/4348d32cd3.js"></script>
+        <script src="build/js/index.min.js"></script>
     </head>
 
     <body>
@@ -60,11 +60,13 @@
             <div class="container-fluid hero">
                 <div class="row center-xs middle-xs">
                     <div class="col-xs-12">
-                        <h1>Medewerkers Informaat</h1>
+                        <h1>
+                            <i class="fa fa-diamond" aria-hidden="true"></i><br />
+                            Medewerkers Informaat</h1>
                         <p>Een grid systeem gebaseerd op Flexbox.</p>
                         <div class="action">
-                            <a href="https://github.com/RobineSavert/Informaat" class="button primary">Download Zip</a>
-                            <a href="https://github.com/RobineSavert/Informaat" target="_blank" class="button primary">Github Repository</a>
+                            <a href="https://github.com/RobineSavert/Informaat" class="button primary"><i class="fa fa-download" aria-hidden="true"></i> Download Zip</a>
+                            <a href="https://github.com/RobineSavert/Informaat" target="_blank" class="button primary"><i class="fa fa-github" aria-hidden="true"></i> Github Repository</a>
                         </div>
 
                     </div>
@@ -92,8 +94,8 @@
                                         <li>"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</li>
                                     </ul>
                                     <div class="action">
-                                        <a href="#" class="button primary js-delete">Verwijderen</a>
-                                        <a href="#" class="button primary">Bekijken</a>
+                                        <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
+                                        <a href="#" class="button primary"><i class="fa fa-pencil" aria-hidden="true"></i> Bekijken</a>
                                     </div>
                                 </div>
                             </div>
@@ -104,17 +106,17 @@
                                     <img src="build/img/user.svg" class="img-user" />
                                     <ul>
                                         <li>
-                                            <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name">Medewerker 2</a>
+                                            <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name" class="editable">Silje Harthoorn</a>
                                         </li>
                                         <li>
-                                            <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name">Senior UX-recruiter</a>
+                                            <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
                                         </li>
-                                        <li><input type="text" id="datepicker" placeholder="20 januari 1986"></li>
+                                        <li><input type="text" id="datepicker" placeholder="20 januari 1986" class="center-xs"></li>
                                         <li>"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</li>
                                     </ul>
                                     <div class="action">
-                                        <a href="#" class="button primary js-delete">Verwijderen</a>
-                                        <a href="#" class="button primary">Bekijken</a>
+                                        <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
+                                        <a href="#" class="button primary"><i class="fa fa-pencil" aria-hidden="true"></i> Bekijken</a>
                                     </div>
                                 </div>
                             </div>
@@ -125,17 +127,17 @@
                                     <img src="build/img/user.svg" class="img-user" />
                                     <ul>
                                         <li>
-                                            <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name">Medewerker 3</a>
+                                            <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name" class="editable">Silje Harthoorn</a>
                                         </li>
                                         <li>
-                                            <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name">Senior UX-recruiter</a>
+                                            <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
                                         </li>
-                                        <li><input type="text" id="datepicker" placeholder="20 januari 1986"></li>
+                                        <li><input type="text" id="datepicker" placeholder="20 januari 1986" class="center-xs"></li>
                                         <li>"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</li>
                                     </ul>
                                     <div class="action">
-                                        <a href="#" class="button primary js-delete">Verwijderen</a>
-                                        <a href="#" class="button primary">Bekijken</a>
+                                        <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
+                                        <a href="#" class="button primary"><i class="fa fa-pencil" aria-hidden="true"></i> Bekijken</a>
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +146,7 @@
                 </section>
                 <section class="page-section center-xs">
                     <div class="action">
-                        <a href="" class="button primary js-add-user">Medewerker toevoegen</a>
+                        <a href="" class="button primary js-add-user"><i class="fa fa-plus" aria-hidden="true"></i> Medewerker toevoegen</a>
                     </div>
                 </section>
             </main>

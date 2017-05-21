@@ -2136,7 +2136,7 @@
   text-align: center;
   text-transform: none;
   font-weight: normal;
-  padding: 1.75em;
+  padding: 1em;
   text-decoration: none;
   height: auto;
   border-color: #000;
@@ -2144,19 +2144,29 @@
   transition: background-color 0.3s, border-color 0.3s;
   letter-spacing: 0;
   -webkit-font-smoothing: antialiased; }
+  @media (max-width: 46.24em) and (orientation: portrait) {
+    .button i {
+      display: none; } }
   .button.primary {
     background-color: #000;
     color: white;
     border: 0; }
     .button.primary:hover {
       background-color: #ec008c; }
-  .button.secondary {
-    border: 3px solid #000;
-    color: #000;
-    font-size: 15px; }
-    .button.secondary:hover {
-      border-color: #ec008c; }
 
+@font-face {
+  font-family: 'HUGEAvantGardeBold';
+  src: url("../fonts/huge_agb_v5-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/huge_agb_v5-webfont.woff") format("woff"), url("../fonts/huge_agb_v5-webfont.ttf") format("truetype"), url("../fonts/huge_agb_v5-webfont.svg#svgFontName") format("svg"); }
+@font-face {
+  font-family: 'Galaxie';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GalaxieCopernicus-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/GalaxieCopernicus-Book.woff") format("woff"), url("../fonts/GalaxieCopernicus-Book.svg#svgFontName") format("svg"); }
+@font-face {
+  font-family: 'Galaxie Italic';
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/GalaxieCopernicus-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GalaxieCopernicus-BookItalic.woff") format("woff"), url("../fonts/GalaxieCopernicus-BookItalic.svg#svgFontName") format("svg"); }
 h2,
 h3,
 h4,
@@ -2201,19 +2211,6 @@ h5 {
   .border ul li:last-of-type {
     font-family: "Galaxie Italic"; }
 
-@font-face {
-  font-family: 'HUGEAvantGardeBold';
-  src: url("../fonts/huge_agb_v5-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/huge_agb_v5-webfont.woff") format("woff"), url("../fonts/huge_agb_v5-webfont.ttf") format("truetype"), url("../fonts/huge_agb_v5-webfont.svg#svgFontName") format("svg"); }
-@font-face {
-  font-family: 'Galaxie';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/GalaxieCopernicus-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/GalaxieCopernicus-Book.woff") format("woff"), url("../fonts/GalaxieCopernicus-Book.svg#svgFontName") format("svg"); }
-@font-face {
-  font-family: 'Galaxie Italic';
-  font-style: italic;
-  font-weight: normal;
-  src: url("../fonts/GalaxieCopernicus-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GalaxieCopernicus-BookItalic.woff") format("woff"), url("../fonts/GalaxieCopernicus-BookItalic.svg#svgFontName") format("svg"); }
 * {
   box-sizing: border-box; }
 
@@ -2241,31 +2238,17 @@ body {
 .box-row {
   margin-bottom: 1em; }
 
-.list-plain {
-  list-style: none; }
-
-.list-horz {
-  margin: 0;
-  padding: 0; }
-
-.list-horz li {
-  float: left;
-  margin-left: 30px; }
-
-.list-horz li:first-child {
-  margin-left: 0; }
-
 .no-border {
   border: 0 !important; }
 
 ul {
   list-style: initial;
   margin: 0;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px; }
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0; }
   ul li {
     list-style: none; }
 
@@ -2276,7 +2259,6 @@ a:hover {
   color: #ec008c; }
 
 header {
-  height: 350px;
   background-image: url("../img/bg2.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -2284,6 +2266,9 @@ header {
   background-size: cover;
   color: #fff;
   margin-bottom: 30px; }
+  @media (max-width: 46.24em) and (orientation: portrait) {
+    header i, header .action {
+      display: none; } }
   header h1 {
     font-family: "HUGEAvantGardeBold";
     font-size: 55px;
@@ -2311,17 +2296,9 @@ footer {
     margin-top: 16px;
     font-family: "Galaxie"; }
 
-.action-secondary {
-  margin-bottom: 120px;
-  overflow: hidden; }
-
-.action-secondary li {
-  margin-left: 15px; }
-
-.section .action-secondary {
-  margin-bottom: 0; }
-
 .action {
   margin-top: 45px; }
+  header .action {
+    margin-bottom: 45px; }
   .action .button {
-    margin: 0 10px; }
+    margin: 0 5px; }
