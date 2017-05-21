@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Flexbox Grid</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link type="text/css" media="screen" href="build/css/style.css" rel="stylesheet" />
+        <script>
+          function loadCSS( href, before, media, callback ){
+            "use strict";
+            var ss = window.document.createElement( "link" );
+            var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+            var sheets = window.document.styleSheets;
+            ss.rel = "stylesheet";
+            ss.href = href;
+            ss.media = "only x";
+            ref.parentNode.insertBefore( ss, ref );
+            ss.onloadcssdefined = function( cb ){
+              var defined;
+              for( var i = 0; i < sheets.length; i++ ){
+                if( sheets[ i ].href && sheets[ i ].href.indexOf( href ) > -1 ){
+                  defined = true;
+                }
+              }
+              if( defined ){
+                cb();
+              } else {
+                setTimeout(function() {
+                  ss.onloadcssdefined( cb );
+                });
+              }
+            };
+            ss.onloadcssdefined(function() {
+              ss.media = media || "all";
+            });
+            return ss;
+          };
+        </script>
+
+
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/css/jqueryui-editable.css" rel="stylesheet"/>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/js/jqueryui-editable.min.js"></script>
+        <script src="build/js/index.min.js"></script>
+
+        <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container-fluid hero">
+                <div class="row center-xs middle-xs">
+                    <div class="col-xs-12">
+                        <h1>Medewerkers Informaat</h1>
+                        <p>Een grid systeem gebaseerd op Flexbox.</p>
+                        <div class="action">
+                            <a href="https://github.com/RobineSavert/Informaat" class="button primary">Download Zip</a>
+                            <a href="https://github.com/RobineSavert/Informaat" target="_blank" class="button primary">Github Repository</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper container-fluid">
+            <main><a name="responsive"></a>
+                <section class="page-section">
+                    <h2>Medewerkers</h2>
+                    <p>Hieronder kun je de medewerkers van Informaat aanpassen, toevoegen, bekijken en verwijderen.</p>
+                    <div class="row js-grid">
+                        <div class="col-xs-12 col-lg-4 js-grid-item">
+                            <div class="box-row">
+                                <div class="border">
+                                    <img src="build/img/user.svg" class="img-user" />
+                                    <ul>
+                                        <li>
+                                            <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name" class="editable">Silje Harthoorn</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
+                                        </li>
+                                        <li><input type="text" id="datepicker" placeholder="20 januari 1986" class="center-xs"></li>
+                                        <li>"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</li>
+                                    </ul>
+                                    <div class="action">
+                                        <a href="#" class="button primary js-delete">Verwijderen</a>
+                                        <a href="#" class="button primary">Bekijken</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 js-grid-item">
+                            <div class="box-row">
+                                <div class="border">
+                                    <img src="build/img/user.svg" class="img-user" />
+                                    <ul>
+                                        <li>
+                                            <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name">Medewerker 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name">Senior UX-recruiter</a>
+                                        </li>
+                                        <li><input type="text" id="datepicker" placeholder="20 januari 1986"></li>
+                                        <li>"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</li>
+                                    </ul>
+                                    <div class="action">
+                                        <a href="#" class="button primary js-delete">Verwijderen</a>
+                                        <a href="#" class="button primary">Bekijken</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 js-grid-item">
+                            <div class="box-row">
+                                <div class="border">
+                                    <img src="build/img/user.svg" class="img-user" />
+                                    <ul>
+                                        <li>
+                                            <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name">Medewerker 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name">Senior UX-recruiter</a>
+                                        </li>
+                                        <li><input type="text" id="datepicker" placeholder="20 januari 1986"></li>
+                                        <li>"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</li>
+                                    </ul>
+                                    <div class="action">
+                                        <a href="#" class="button primary js-delete">Verwijderen</a>
+                                        <a href="#" class="button primary">Bekijken</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page-section center-xs">
+                    <div class="action">
+                        <a href="" class="button primary js-add-user">Medewerker toevoegen</a>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="center-xs middle-xs">
+            <p>Gemaakt met liefde voor (en in opdracht van) Informaat</p>
+        </footer>
+    </body>
+
+</html>
+

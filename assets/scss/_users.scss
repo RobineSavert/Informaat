@@ -1,0 +1,27 @@
+.border {
+  padding: $standard-padding * 2;
+  box-shadow: inset 0 0 0 15px $color-four;
+  .img-user {
+    width: 100px;
+    height: 100px;
+  }
+  ul li {
+    .editable-click, a.editable-click, a.editable-click:hover {
+      border: 0;
+    }
+    input {
+      border: 0;
+      font-family: inherit;
+      &:hover, &:focus {
+        cursor: pointer;
+      }
+    }
+    &:last-of-type {
+      font-family: $text-italic;
+    }
+  }
+
+}
+
+
+

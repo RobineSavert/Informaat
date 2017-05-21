@@ -1,0 +1,180 @@
+@import '_variables';
+@import '_mixins';
+@import '_mq';
+@import '_flexboxgrid';
+@import '_buttons';
+@import '_users';
+
+@font-face{font-family:'HUGEAvantGardeBold';src:url("../fonts/huge_agb_v5-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/huge_agb_v5-webfont.woff") format("woff"),url("../fonts/huge_agb_v5-webfont.ttf") format("truetype"),url("../fonts/huge_agb_v5-webfont.svg#svgFontName") format("svg")};
+@font-face{font-family:'Galaxie';font-style:normal;font-weight:normal;src:url("../fonts/GalaxieCopernicus-Book.eot?#iefix") format("embedded-opentype"),url("../fonts/GalaxieCopernicus-Book.woff") format("woff"),url("../fonts/GalaxieCopernicus-Book.svg#svgFontName") format("svg")};
+@font-face{font-family:'Galaxie Italic';font-style:italic;font-weight:normal;src:url("../fonts/GalaxieCopernicus-BookItalic.eot?#iefix") format("embedded-opentype"),url("../fonts/GalaxieCopernicus-BookItalic.woff") format("woff"),url("../fonts/GalaxieCopernicus-BookItalic.svg#svgFontName") format("svg")};
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: $text;
+  line-height: 2;
+  color: $color-two;
+  margin: 0;
+  padding: 0;
+}
+
+.magenta {
+  color: $color-four;
+}
+
+.box, .box-first, .box-large, .box-nested, .box-row {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 2.25rem;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.box-large {
+  height: 8rem;
+}
+
+.box, .box-first, .box-large, .box-nested, .box-row {
+  padding: 1rem;
+}
+
+.box-row {
+  margin-bottom: 1em;
+}
+
+.list-plain {
+  list-style: none;
+}
+.list-horz {
+  margin: 0;
+  padding: 0;
+}
+.list-horz li {
+  float: left;
+  margin-left: 30px;
+}
+.list-horz li:first-child {
+  margin-left: 0;
+}
+.no-border {
+  border: 0!important
+}
+
+
+h2,
+h3,
+h4,
+h5 {
+
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 31px;
+  color: $color-six;
+  margin: 0 0 30px;
+}
+
+h3 {
+  font-size: 26px;
+  color: $color-six;
+  margin: 40px 0 15px;
+}
+
+h4,
+h5 {
+  font-size: 22px;
+  color: $color-six;
+  margin: 35px 0 15px;
+}
+
+ul {
+  list-style: initial;
+  margin: 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  li {
+    list-style: none;
+  }
+}
+a {
+  color: $color-four;
+}
+a:hover {
+  color: $color-four;
+}
+
+
+header {
+  height: 350px;
+  @include background-image("bg2.jpg", center, $color-two, cover);
+  color: $color-one;
+  margin-bottom: $standard-margin;
+  h1 {
+    font-family: $title;
+    font-size: 55px;
+    line-height: 1.2em;
+    padding-top: $standard-padding;
+    @include mq($until: tablet, $and: '(orientation: portrait)') {
+      font-size: 38px;
+    }
+  }
+  p {
+    font-family: $text;
+  }
+}
+
+.section {
+  padding: $standard-padding * 3 0;
+  width: 100%;
+}
+
+footer {
+  background-color: $color-six;
+  height: 200px;
+  margin-top: $standard-margin * 3;
+  padding: $standard-padding * 4 0 0;
+  p {
+    letter-spacing: -0.06em;
+    font-size: 15px;
+    color: $color-five;
+    margin-top: 16px;
+    font-family: $text;
+  }
+}
+
+
+
+.action-secondary {
+  margin-bottom: 120px;
+  overflow: hidden;
+}
+.action-secondary li {
+  margin-left: 15px;
+}
+.section .action-secondary {
+  margin-bottom: 0;
+}
+.action {
+  margin-top: 45px;
+  .button {
+    margin: 0 10px
+  }
+}
