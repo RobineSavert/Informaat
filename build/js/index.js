@@ -29,15 +29,11 @@ $(document).ready(function() {
         itemSelector: '.js-grid-item'
     });
 
-    var $item = $('.js-grid-item');
-
-    $grid.on('click', '.js-grid-item .js-delete', function() {
-        $(this).parent().parent().remove();
-        $grid.isotope();
-        $grid.isotope('reloadItems')
-        $grid.isotope('layout');
-
-        return false;
+    $grid.on('click', '.js-delete', function(e) {
+        e.preventDefault();
+        $grid.isotope( 'remove', $(this).parents('.js-grid-item') )
+        // layout remaining item elements
+            .isotope('layout');
     });
 
 
