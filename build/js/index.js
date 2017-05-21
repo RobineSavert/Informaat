@@ -10,15 +10,10 @@ $(document).ready(function() {
             .isotope('layout');
     });
 
-
-    $(".js-add-user").click(function(){
-        $grid.isotope( 'appended', $(this).parents('.js-grid-item') )
-        // layout remaining item elements
-            .isotope('layout');
-    });
-
-
 });
+
+
+
 $(document).ready(function() {
     //toggle `popup` / `inline` mode
     $.fn.editable.defaults.mode = 'inline';
