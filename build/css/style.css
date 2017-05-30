@@ -2138,7 +2138,6 @@
   font-weight: normal;
   padding: 1em;
   text-decoration: none;
-  height: auto;
   border-color: #000;
   -webkit-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
@@ -2149,7 +2148,7 @@
       display: none; } }
   .button.primary {
     background-color: #000;
-    color: white;
+    color: #fff;
     border: 0; }
     .button.primary:hover {
       background-color: #ec008c; }
@@ -2171,7 +2170,8 @@ h2,
 h3,
 h4,
 h5 {
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  color: #000; }
 
 p {
   margin-bottom: 15px; }
@@ -2181,35 +2181,35 @@ h1 {
 
 h2 {
   font-size: 31px;
-  color: #000;
-  margin: 0 0 30px; }
+  margin: 0 0 30px;
+  border-bottom: 1px solid #294b69; }
 
 h3 {
   font-size: 26px;
-  color: #000;
-  margin: 40px 0 15px; }
+  margin: 40px 0 15px;
+  border-bottom: 1px solid #294b69; }
 
 h4,
 h5 {
   font-size: 22px;
-  color: #000;
   margin: 35px 0 15px; }
 
 .border {
-  padding: 30px;
+  padding: 2em;
   box-shadow: inset 0 0 0 15px #ec008c; }
   .border .img-user {
     width: 100px;
     height: 100px; }
-  .border ul li .editable-click, .border ul li a.editable-click, .border ul li a.editable-click:hover {
-    border: 0; }
-  .border ul li input {
-    border: 0;
+  .border .editable-click, .border a.editable-click, .border a.editable-click:hover, .border input {
+    border: dashed #808080;
+    border-width: 0 0 1px 0; }
+  .border input {
     font-family: inherit; }
-    .border ul li input:hover, .border ul li input:focus {
+    .border input:hover, .border input:focus {
       cursor: pointer; }
   .border ul li:last-of-type {
-    font-family: "Galaxie Italic"; }
+    font-family: "Galaxie Italic";
+    color: #808080; }
 
 * {
   box-sizing: border-box; }
@@ -2221,13 +2221,15 @@ body {
   margin: 0;
   padding: 0; }
 
+.magenta {
+  color: #ec008c; }
+
 .box, .box-first, .box-large, .box-nested, .box-row {
   position: relative;
   box-sizing: border-box;
   min-height: 2.25rem;
   margin-bottom: 0;
-  overflow: hidden;
-  text-align: center; }
+  overflow: hidden; }
 
 .box-large {
   height: 8rem; }
@@ -2238,34 +2240,27 @@ body {
 .box-row {
   margin-bottom: 1em; }
 
-.no-border {
-  border: 0 !important; }
-
 ul {
   list-style: initial;
   margin: 0;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  -webkit-padding-start: 0; }
+  padding: 0; }
   ul li {
     list-style: none; }
 
 a {
-  color: #ec008c; }
+  color: #000; }
 
 a:hover {
   color: #ec008c; }
 
 header {
-  background-image: url("../img/bg2.jpg");
+  background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #444;
   background-size: cover;
   color: #fff;
-  margin-bottom: 30px; }
+  margin-bottom: 2em; }
   @media (max-width: 46.24em) and (orientation: portrait) {
     header i, header .action {
       display: none; } }
@@ -2273,27 +2268,11 @@ header {
     font-family: "HUGEAvantGardeBold";
     font-size: 55px;
     line-height: 1.2em;
-    padding-top: 15px; }
+    padding-top: 1em; }
     @media (max-width: 46.24em) and (orientation: portrait) {
       header h1 {
         font-size: 38px; } }
   header p {
-    font-family: "Galaxie"; }
-
-.section {
-  padding: 45px 0;
-  width: 100%; }
-
-footer {
-  background-color: #000;
-  height: 200px;
-  margin-top: 90px;
-  padding: 60px 0 0; }
-  footer p {
-    letter-spacing: -0.06em;
-    font-size: 15px;
-    color: #808080;
-    margin-top: 16px;
     font-family: "Galaxie"; }
 
 .action {
@@ -2302,3 +2281,23 @@ footer {
     margin-bottom: 45px; }
   .action .button {
     margin: 0 5px; }
+
+section {
+  padding: 3em 0;
+  width: 100%; }
+  section.more-info {
+    font-size: 13px; }
+    section.more-info ul li {
+      list-style-type: disc; }
+
+footer {
+  background-color: #000;
+  height: 200px;
+  margin-top: 6em;
+  padding: 4em 0 0; }
+  footer p {
+    font-family: "Galaxie";
+    letter-spacing: -0.06em;
+    font-size: 15px;
+    color: #808080;
+    margin-top: 1em; }

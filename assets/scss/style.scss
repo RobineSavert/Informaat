@@ -21,13 +21,16 @@ body {
   padding: 0;
 }
 
+.magenta {
+  color: $color-four;
+}
+
 .box, .box-first, .box-large, .box-nested, .box-row {
   position: relative;
   box-sizing: border-box;
   min-height: 2.25rem;
   margin-bottom: 0;
   overflow: hidden;
-  text-align: center;
 }
 
 .box-large {
@@ -42,26 +45,17 @@ body {
   margin-bottom: 1em;
 }
 
-.no-border {
-  border: 0!important
-}
-
-
 ul {
   list-style: initial;
   margin: 0;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
-  -webkit-padding-start: 0;
+  padding: 0;
   li {
     list-style: none;
   }
 }
 
 a {
-  color: $color-four;
+  color: $color-six;
 }
 
 a:hover {
@@ -69,7 +63,7 @@ a:hover {
 }
 
 header {
-  @include background-image("bg2.jpg", center, $color-two, cover);
+  @include background-image("bg.jpg", center, $color-two, cover);
   color: $color-one;
   margin-bottom: $standard-margin;
   @include mq($until: tablet, $and: '(orientation: portrait)') {
@@ -91,26 +85,6 @@ header {
   }
 }
 
-.section {
-  padding: $standard-padding * 3 0;
-  width: 100%;
-}
-
-footer {
-  background-color: $color-six;
-  height: 200px;
-  margin-top: $standard-margin * 3;
-  padding: $standard-padding * 4 0 0;
-  p {
-    letter-spacing: -0.06em;
-    font-size: 15px;
-    color: $color-five;
-    margin-top: 16px;
-    font-family: $text;
-  }
-}
-
-
 .action {
   margin-top: 45px;
   header & {
@@ -121,5 +95,28 @@ footer {
   }
 }
 
+section {
+  padding: $standard-padding * 3 0;
+  width: 100%;
+  &.more-info {
+    font-size: 13px;
+    ul li {
+      list-style-type: disc;
+    }
+  }
+}
 
+footer {
+  background-color: $color-six;
+  height: 200px;
+  margin-top: $standard-margin * 3;
+  padding: $standard-padding * 4 0 0;
+  p {
+    font-family: $text;
+    letter-spacing: -0.06em;
+    font-size: 15px;
+    color: $color-five;
+    margin-top: $standard-margin / 2;
 
+  }
+}

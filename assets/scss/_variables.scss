@@ -8,7 +8,7 @@ $color-six: #000;
 
 $img-path: "../img";
 
-$standard-margin: 30px;
+$standard-margin: 2em;
 $standard-padding: $standard-margin / 2;
 
 
@@ -16,4 +16,14 @@ $standard-padding: $standard-margin / 2;
 $title: 'HUGEAvantGardeBold';
 $text: 'Galaxie';
 $text-italic: 'Galaxie Italic';
+
+
+
+$mq-breakpoints: (
+        mobile:  320px,
+        tablet:  740px,
+        desktop: 980px,
+        wide:    1300px
+) !default;
+
 

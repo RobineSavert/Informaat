@@ -5,21 +5,21 @@
     width: 100px;
     height: 100px;
   }
-  ul li {
-    .editable-click, a.editable-click, a.editable-click:hover {
-      border: 0;
-    }
+  .editable-click, a.editable-click, a.editable-click:hover, input {
+    border: dashed $color-five;
+    border-width: 0 0 1px 0;
+  }
+
     input {
-      border: 0;
       font-family: inherit;
       &:hover, &:focus {
         cursor: pointer;
       }
     }
-    &:last-of-type {
+    ul li:last-of-type {
       font-family: $text-italic;
+      color: $color-five;
     }
-  }
 
 }
 

@@ -66,7 +66,7 @@
                         <h1>
                             <i class="fa fa-diamond" aria-hidden="true"></i><br />
                             Medewerkers Informaat</h1>
-                        <p>Een grid systeem gebaseerd op Flexbox.</p>
+                        <p>Een grid systeem gebaseerd op Flexbox en een beetje Isotope.</p>
                         <div class="action">
                             <a href="https://github.com/RobineSavert/Informaat" class="button primary"><i class="fa fa-download" aria-hidden="true"></i> Download Zip</a>
                             <a href="https://github.com/RobineSavert/Informaat" target="_blank" class="button primary"><i class="fa fa-github" aria-hidden="true"></i> Github Repository</a>
@@ -77,85 +77,128 @@
             </div>
         </header>
         <div class="wrapper container-fluid">
-            <main><a name="responsive"></a>
-                <section class="page-section">
-                    <h2>Medewerkers</h2>
-                    <p>Hieronder kun je de medewerkers van Informaat aanpassen, toevoegen, bekijken en verwijderen.</p>
-                    <div class="row js-grid">
-                        <div class="col-xs-12 col-lg-4 js-grid-item">
-                            <div class="box-row">
-                                <div class="border">
-                                    <img src="build/img/user.svg" class="img-user" />
-                                    <ul>
-                                        <li>
-                                            <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name" class="editable">Silje Harthoorn</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
-                                        </li>
-                                        <li><input type="text" id="datepicker" placeholder="20 januari 1986" class="center-xs"></li>
-                                        <li>"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</li>
-                                    </ul>
-                                    <div class="action">
-                                        <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
-                                        <a href="#" class="button primary"><i class="fa fa-pencil" aria-hidden="true"></i> Bekijken</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-lg-4 js-grid-item">
-                            <div class="box-row">
-                                <div class="border">
-                                    <img src="build/img/user.svg" class="img-user" />
-                                    <ul>
-                                        <li>
-                                            <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name" class="editable">Silje Harthoorn</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
-                                        </li>
-                                        <li><input type="text" id="datepicker" placeholder="20 januari 1986" class="center-xs"></li>
-                                        <li>"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</li>
-                                    </ul>
-                                    <div class="action">
-                                        <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
-                                        <a href="#" class="button primary"><i class="fa fa-pencil" aria-hidden="true"></i> Bekijken</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-lg-4 js-grid-item">
-                            <div class="box-row">
-                                <div class="border">
-                                    <img src="build/img/user.svg" class="img-user" />
-                                    <ul>
-                                        <li>
-                                            <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name" class="editable">Silje Harthoorn</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
-                                        </li>
-                                        <li><input type="text" id="datepicker" placeholder="20 januari 1986" class="center-xs"></li>
-                                        <li>"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</li>
-                                    </ul>
-                                    <div class="action">
-                                        <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
-                                        <a href="#" class="button primary"><i class="fa fa-pencil" aria-hidden="true"></i> Bekijken</a>
-                                    </div>
+            <section class="page-section">
+                <h2>Medewerkers</h2>
+                <p>Hieronder kun je de medewerkers van Informaat aanpassen en verwijderen door middel van het klikken op de naam, functietitel, geboortedatum en biografie.
+                    Dit heb ik gemaakt met x-editable in combinatie met jQuery UI.</p>
+                <div class="row js-grid">
+                    <div class="col-xs-12 col-lg-4 js-grid-item center-xs">
+                        <div class="box-row">
+                            <div class="border">
+                                <img src="build/img/user.svg" class="img-user" />
+                                <ul>
+                                    <li>
+                                        <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name" class="editable">Silje Harthoorn</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
+                                    </li>
+                                    <li><input type="text" id="datepicker" placeholder="20 januari 1986" class="center-xs datepicker-editable"></li>
+                                    <li><a href="#" id="username" data-type="textarea" data-placement="right" data-title="Enter bio" class="editable">"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</a>
+                                    </li>
+                                </ul>
+                                <div class="action">
+                                    <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
+                                    <a href="#" class="button primary"><i class="fa fa-pencil" aria-hidden="true"></i> Bekijken</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="page-section center-xs">
-                    <div class="action">
-                        <a href="#" class="button primary js-add-user"><i class="fa fa-plus" aria-hidden="true"></i> Medewerker toevoegen</a>
+                    <div class="col-xs-12 col-lg-4 js-grid-item center-xs">
+                        <div class="box-row">
+                            <div class="border">
+                                <img src="build/img/user.svg" class="img-user" />
+                                <ul>
+                                    <li>
+                                        <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name" class="editable">Silje Harthoorn</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
+                                    </li>
+                                    <li><input type="text" id="datepicker-2" placeholder="20 januari 1986" class="center-xs datepicker-editable"></li>
+                                    <li>"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</li>
+                                </ul>
+                                <div class="action">
+                                    <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
+                                    <a href="#" class="button primary"><i class="fa fa-pencil" aria-hidden="true"></i> Bekijken</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
-            </main>
+                    <div class="col-xs-12 col-lg-4 js-grid-item center-xs">
+                        <div class="box-row">
+                            <div class="border">
+                                <img src="build/img/user.svg" class="img-user" />
+                                <ul>
+                                    <li>
+                                        <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name" class="editable">Silje Harthoorn</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
+                                    </li>
+                                    <li><input type="text" id="datepicker-3" placeholder="20 januari 1986" class="center-xs datepicker-editable"></li>
+                                    <li>"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</li>
+                                </ul>
+                                <div class="action">
+                                    <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
+                                    <a href="#" class="button primary"><i class="fa fa-pencil" aria-hidden="true"></i> Bekijken</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section center-xs">
+                <div class="action">
+                    <a href="#" class="button primary js-add-user"><i class="fa fa-plus" aria-hidden="true"></i> Medewerker toevoegen</a>
+                </div>
+            </section>
+            <section class="page-section more-info">
+              <h3>More info</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-2">
+                        <div class="box-row">
+                            <h4>Usages</h4>
+                            <ul>
+                                <li>SASS</li>
+                                <li>HTML5</li>
+                                <li>SVG</li>
+                                <li>FontAwesome</li>
+                                <li>Grunt</li>
+                                <li>NPM</li>
+                                <li>Flexbox Grid</li>
+                                <li>Isotope</li>
+                                <li>x-Editable</li>
+                                <li>jQuery UI</li>
+                                <li>GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-8">
+                        <div class="box-row">
+                            <h4>Process</h4>
+                            <p>I wanted to make this app with Angular JS, but was unable to find a proper REST API to give me the correct data.
+                                After that, I wanted to make my own API, but ran into some problems with my firewall/proxy settings.</p>
+                            <p>
+                                After spending some time figuring out how to fix this and make it work, I decided to take another route in finishing this project. The data is static HTML but can be changed with the x-Editable functionality.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-2">
+                        <div class="box-row">
+                            <h4>Facts</h4>
+                            <ul>
+                                <li>Hours: 18 hours</li>
+                                <li>SCSS: 9 files</li>
+                                <li>JS: 2 files</li>
+                                <li>HTML: 1 file</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         <footer class="center-xs middle-xs">
-            <p>Gemaakt met liefde <i class="fa fa-heart" aria-hidden="true"></i> voor (en in opdracht van) Informaat</p>
+            <p>Gemaakt met liefde  <i class="fa fa-heart magenta" aria-hidden="true"></i>  voor (en in opdracht van) Informaat</p>
         </footer>
     </body>
 

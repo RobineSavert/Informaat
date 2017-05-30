@@ -6,10 +6,9 @@
   text-align: center;
   text-transform: none;
   font-weight: normal;
-  padding: 1em;
+  padding: $standard-padding;
   text-decoration: none;
-  height: auto;
-  border-color: #000;
+  border-color: $color-six;
   -webkit-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
   letter-spacing: 0;
@@ -20,8 +19,8 @@
     }
   }
   &.primary {
-    background-color: #000;
-    color: white;
+    background-color: $color-six;
+    color: $color-one;
     border: 0;
     &:hover {
       background-color: $color-four;
