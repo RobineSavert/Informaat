@@ -2181,18 +2181,18 @@ h1 {
 
 h2 {
   font-size: 31px;
-  margin: 0 0 30px;
+  margin: 0 0 1em;
   border-bottom: 1px solid #294b69; }
 
 h3 {
   font-size: 26px;
-  margin: 40px 0 15px;
+  margin-top: 0;
   border-bottom: 1px solid #294b69; }
 
 h4,
 h5 {
-  font-size: 22px;
-  margin: 35px 0 15px; }
+  margin: 0;
+  font-size: 22px; }
 
 .border {
   padding: 2em;
@@ -2221,6 +2221,22 @@ body {
   margin: 0;
   padding: 0; }
 
+ul {
+  list-style: initial;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+a {
+  color: #000; }
+
+a:hover {
+  color: #ec008c; }
+
+.i-mr {
+  margin-right: 0.5em; }
+
 .magenta {
   color: #ec008c; }
 
@@ -2239,19 +2255,6 @@ body {
 
 .box-row {
   margin-bottom: 1em; }
-
-ul {
-  list-style: initial;
-  margin: 0;
-  padding: 0; }
-  ul li {
-    list-style: none; }
-
-a {
-  color: #000; }
-
-a:hover {
-  color: #ec008c; }
 
 header {
   background-image: url("../img/bg.jpg");
@@ -2276,19 +2279,17 @@ header {
     font-family: "Galaxie"; }
 
 .action {
-  margin-top: 45px; }
-  header .action {
-    margin-bottom: 45px; }
+  margin: 45px 0; }
+  .border .action {
+    margin-bottom: 0; }
   .action .button {
     margin: 0 5px; }
 
 section {
-  padding: 3em 0;
+  padding: 1em 0;
   width: 100%; }
   section.more-info {
     font-size: 13px; }
-    section.more-info ul li {
-      list-style-type: disc; }
 
 footer {
   background-color: #000;

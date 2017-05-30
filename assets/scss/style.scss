@@ -21,6 +21,27 @@ body {
   padding: 0;
 }
 
+ul {
+  list-style: initial;
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  color: $color-six;
+}
+
+a:hover {
+  color: $color-four;
+}
+
+.i-mr {
+  margin-right: $standard-margin / 4;
+}
+
 .magenta {
   color: $color-four;
 }
@@ -45,22 +66,7 @@ body {
   margin-bottom: 1em;
 }
 
-ul {
-  list-style: initial;
-  margin: 0;
-  padding: 0;
-  li {
-    list-style: none;
-  }
-}
 
-a {
-  color: $color-six;
-}
-
-a:hover {
-  color: $color-four;
-}
 
 header {
   @include background-image("bg.jpg", center, $color-two, cover);
@@ -86,9 +92,9 @@ header {
 }
 
 .action {
-  margin-top: 45px;
-  header & {
-    margin-bottom: 45px;
+  margin: 45px 0;
+  .border & {
+    margin-bottom: 0;
   }
   .button {
     margin: 0 5px
@@ -96,13 +102,10 @@ header {
 }
 
 section {
-  padding: $standard-padding * 3 0;
+  padding: $standard-padding 0;
   width: 100%;
   &.more-info {
     font-size: 13px;
-    ul li {
-      list-style-type: disc;
-    }
   }
 }
 
