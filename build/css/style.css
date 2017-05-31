@@ -2209,7 +2209,8 @@ h5 {
       cursor: pointer; }
   .border ul li:last-of-type {
     font-family: "Galaxie Italic";
-    color: #808080; }
+    color: #808080;
+    margin-bottom: 2em; }
 
 * {
   box-sizing: border-box; }

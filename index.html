@@ -42,15 +42,15 @@
         </script>
 
 
-        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
 
 
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/css/jqueryui-editable.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/css/jqueryui-editable.css" rel="stylesheet"/>
 
 
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/js/jqueryui-editable.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jqueryui-editable/js/jqueryui-editable.min.js"></script>
         <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
         <script src="https://use.fontawesome.com/4348d32cd3.js"></script>
         <script src="build/js/index.min.js"></script>
@@ -79,8 +79,7 @@
         <div class="wrapper container-fluid">
             <section class="page-section">
                 <h2>Medewerkers</h2>
-                <p>Hieronder kun je de medewerkers van Informaat aanpassen en verwijderen door middel van het klikken op de naam, functietitel, geboortedatum en biografie.
-                    Dit heb ik gemaakt met x-editable in combinatie met jQuery UI.</p>
+                <p>Hieronder kun je de medewerkers van Informaat aanpassen en verwijderen door middel van het klikken op de naam, functietitel, geboortedatum en biografie.</p>
                 <div class="row js-grid">
                     <div class="col-xs-12 col-lg-4 js-grid-item center-xs">
                         <div class="box-row">
@@ -112,7 +111,7 @@
                                     <li>
                                         <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
                                     </li>
-                                    <li><input type="text" id="datepicker" placeholder="20 januari 1986" class="center-xs datepicker-editable"></li>
+                                    <li><input type="text" id="datepicker2" placeholder="20 januari 1986" class="center-xs datepicker-editable"></li>
                                     <li><a href="#" id="username" data-type="textarea" data-placement="right" data-title="Enter bio" class="editable">"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</a>
                                     </li>
                                 </ul>
@@ -131,7 +130,7 @@
                                     <li>
                                         <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
                                     </li>
-                                    <li><input type="text" id="datepicker" placeholder="20 januari 1986" class="center-xs datepicker-editable"></li>
+                                    <li><input type="text" id="datepicker3" placeholder="20 januari 1986" class="center-xs datepicker-editable"></li>
                                     <li><a href="#" id="username" data-type="textarea" data-placement="right" data-title="Enter bio" class="editable">"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</a>
                                     </li>
                                 </ul>
@@ -145,11 +144,11 @@
                 <a href="#" class="button primary js-add-user"><i class="fa fa-plus" aria-hidden="true"></i> Medewerker toevoegen</a>
             </section>
             <section class="page-section more-info">
-              <h3>More info</h3>
+              <h3>Meer info</h3>
                 <div class="row">
                     <div class="col-xs-12 col-lg-2">
                         <div class="box-row">
-                            <h4>Usages</h4>
+                            <h4>Gebruikt</h4>
                             <ul>
                                 <li>SASS</li>
                                 <li>HTML5</li>
@@ -167,21 +166,23 @@
                     </div>
                     <div class="col-xs-12 col-lg-8">
                         <div class="box-row">
-                            <h4>Process</h4>
-                            <p>I wanted to make this app with Angular JS, but was unable to find a proper REST API to give me the correct data.
-                                After that, I wanted to make my own API, but ran into some problems with my firewall/proxy settings.</p>
-                            <p>
-                                After spending some time figuring out how to fix this and make it work, I decided to take another route in finishing this project. The data is static HTML but can be changed with the x-Editable functionality.</p>
+                            <h4>Proces</h4>
+
+                            <p>Ik wilde erg graag AngularJS gebruiken voor het maken van deze app, maar ik kon nergens een geschikte REST API vinden. Ik besloot daarna om zelf een API te maken en deze zelf te hosten, maar ik liep tegen allerlei proxy/firewall problemen aan.</p>
+                            <p>Nadat ik enkele uren besteed heb om uit te vinden hoe ik dit moest fixen, besloot ik een andere weg te kiezen om dit project zo goed mogelijk af te ronden en zo toch een inkijkje te kunnen geven in mijn vaardigheden.</p>
+                            <p>De data is statisch, maar kan door middel van x-Editable (in combinatie met jQuiry UI) gewijzigd worden en vervolgens opgeslagen worden.
+                                Ik heb gebruik gemaakt van het Flexbox Grid systeem en heb vervolgens Isotope gebruikt voor het verwijderen en toevoegen van nieuwe medewerkers. Grunt zorgt ervoor dat alles geminificeerd wordt en ik heb alles met de terminal gecommit naar de GitHub repo.</p>
+                            <p><u>Verbeterpunten</u>: de datumpicker zou makkelijker in gebruik moeten zijn (format en jaar kiezen), eerder in het proces moeten kiezen tussen Flexbox Grid of Isotope (werken niet helemaal goed samen), </p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-2">
                         <div class="box-row">
                             <h4>Facts</h4>
                             <ul>
-                                <li><i class="fa fa-clock-o i-mr" aria-hidden="true"></i>  18 hours</li>
-                                <li><i class="fa fa-css3 i-mr" aria-hidden="true"></i>  9 SCSS files</li>
-                                <li><i class="fa fa-file-code-o i-mr" aria-hidden="true"></i>  2 JS files</li>
-                                <li><i class="fa fa-html5 i-mr" aria-hidden="true"></i>  1 HTML file</li>
+                                <li><i class="fa fa-clock-o i-mr" aria-hidden="true"></i>  18 uur</li>
+                                <li><i class="fa fa-css3 i-mr" aria-hidden="true"></i>  9 SCSS bestanden</li>
+                                <li><i class="fa fa-file-code-o i-mr" aria-hidden="true"></i>  2 JS bestanden</li>
+                                <li><i class="fa fa-html5 i-mr" aria-hidden="true"></i>  1 HTML bestand</li>
                                 <li><i class="fa fa-github-alt i-mr" aria-hidden="true"></i>  7 commits</li>
                             </ul>
                         </div>

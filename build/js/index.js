@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     var $grid = $('.js-grid').isotope({
         itemSelector: '.js-grid-item'
     });
@@ -10,15 +11,20 @@ $(document).ready(function() {
             .isotope('layout');
     });
 
+    $('.js-add-user').on( 'click', function(e) {
+        e.preventDefault();
+        $('.js-grid-item:last').clone().insertAfter($('.js-grid .js-grid-item:last'));
+    });
+
+
 });
-
-
-
 $(document).ready(function() {
     $.fn.editable.defaults.mode = 'inline';
 
     $('.editable').editable();
     $('.datepicker-editable').datepicker();
+
+
 
     /*
      //uncomment these lines to send data on server
