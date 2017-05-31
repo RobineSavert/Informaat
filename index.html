@@ -60,7 +60,7 @@
 
     <body>
         <header>
-            <div class="container-fluid hero">
+            <div class="container-fluid">
                 <div class="row center-xs middle-xs">
                     <div class="col-xs-12">
                         <h1>
@@ -68,7 +68,7 @@
                             Medewerkers Informaat</h1>
                         <p>Een grid systeem gebaseerd op Flexbox en een beetje Isotope.</p>
                         <div class="action">
-                            <a href="https://github.com/RobineSavert/Informaat" class="button primary"><i class="fa fa-download" aria-hidden="true"></i> Download Zip</a>
+                            <a href="https://github.com/RobineSavert/Informaat" target="_blank" class="button primary"><i class="fa fa-download" aria-hidden="true"></i> Download Zip</a>
                             <a href="https://github.com/RobineSavert/Informaat" target="_blank" class="button primary"><i class="fa fa-github" aria-hidden="true"></i> Github Repository</a>
                         </div>
 
@@ -81,7 +81,7 @@
                 <h2>Medewerkers</h2>
                 <p>Hieronder kun je de medewerkers van Informaat aanpassen en verwijderen door middel van het klikken op de naam, functietitel, geboortedatum en biografie.</p>
                 <div class="row js-grid">
-                    <div class="col-xs-12 col-lg-4 js-grid-item center-xs">
+                    <div class="col-xs-12 col-sm-6 col-lg-4 js-grid-item center-xs">
                         <div class="box-row">
                             <div class="border">
                                 <img src="build/img/user.svg" class="img-user" />
@@ -92,46 +92,55 @@
                                     <li>
                                         <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
                                     </li>
-                                    <li><input type="text" id="datepicker" placeholder="20 januari 1986" class="center-xs datepicker-editable"></li>
-                                    <li><a href="#" id="username" data-type="textarea" data-placement="right" data-title="Enter bio" class="editable">"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</a>
+                                    <li>
+                                        <input type="text" id="datepicker" placeholder="20 januari 1986" class="center-xs datepicker-editable">
+                                    </li>
+                                    <li>
+                                        "<a href="#" id="username" data-type="textarea" data-placement="right" data-title="Enter bio" class="editable">Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!</a>"
                                     </li>
                                 </ul>
                                 <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-lg-4 js-grid-item center-xs">
+                    <div class="col-xs-12 col-sm-6 col-lg-4 js-grid-item center-xs">
                         <div class="box-row">
                             <div class="border">
                                 <img src="build/img/user.svg" class="img-user" />
                                 <ul>
                                     <li>
-                                        <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name" class="editable">Silje Harthoorn</a>
+                                        <a href="#" id="username2" data-type="text" data-placement="right" data-title="Enter name" class="editable">Vincent Smedinga</a>
                                     </li>
                                     <li>
-                                        <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
+                                        <a href="#" id="functiontitle2" data-type="text" data-placement="right" data-title="Enter name" class="editable">UX Engineer</a>
                                     </li>
-                                    <li><input type="text" id="datepicker2" placeholder="20 januari 1986" class="center-xs datepicker-editable"></li>
-                                    <li><a href="#" id="username" data-type="textarea" data-placement="right" data-title="Enter bio" class="editable">"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</a>
+                                    <li>
+                                        <input type="text" id="datepicker2" placeholder="3 oktober 1982" class="center-xs datepicker-editable">
+                                    </li>
+                                    <li>
+                                        "<a href="#" id="username" data-type="textarea" data-placement="right" data-title="Enter bio" class="editable">Ik heb het mooiste beroep ter wereld &amp; bij Informaat kan ik naar volledige tevredenheid uitvoeren</a>"
                                     </li>
                                 </ul>
                                 <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-lg-4 js-grid-item center-xs">
+                    <div class="col-xs-12 col-sm-6 col-lg-4 js-grid-item center-xs">
                         <div class="box-row">
                             <div class="border">
                                 <img src="build/img/user.svg" class="img-user" />
                                 <ul>
                                     <li>
-                                        <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter name" class="editable">Silje Harthoorn</a>
+                                        <a href="#" id="username3" data-type="text" data-placement="right" data-title="Enter name" class="editable">Rieneke Deelstra</a>
                                     </li>
                                     <li>
-                                        <a href="#" id="functiontitle" data-type="text" data-placement="right" data-title="Enter name" class="editable">Senior UX-recruiter</a>
+                                        <a href="#" id="functiontitle3" data-type="text" data-placement="right" data-title="Enter name" class="editable">HR-manager</a>
                                     </li>
-                                    <li><input type="text" id="datepicker3" placeholder="20 januari 1986" class="center-xs datepicker-editable"></li>
-                                    <li><a href="#" id="username" data-type="textarea" data-placement="right" data-title="Enter bio" class="editable">"Ik vind het geweldig om voor Informaat te werken, vooral omdat mijn liefde voor mensen ervoor zorgt dat elke dag een fijne werkdag is!"</a>
+                                    <li>
+                                        <input type="text" id="datepicker3" placeholder="25 april 1987" class="center-xs datepicker-editable">
+                                    </li>
+                                    <li>
+                                        "<a href="#" id="username" data-type="textarea" data-placement="right" data-title="Enter bio" class="editable">Wat ik vooral fijn vind, is dat bij Informaat de mensen voorop staan. We zijn geen robots, maar mensen met passie</a>"
                                     </li>
                                 </ul>
                                 <a href="#" class="button primary js-delete"><i class="fa fa-trash-o" aria-hidden="true"></i> Verwijderen</a>
@@ -168,22 +177,23 @@
                         <div class="box-row">
                             <h4>Proces</h4>
 
-                            <p>Ik wilde erg graag AngularJS gebruiken voor het maken van deze app, maar ik kon nergens een geschikte REST API vinden. Ik besloot daarna om zelf een API te maken en deze zelf te hosten, maar ik liep tegen allerlei proxy/firewall problemen aan.</p>
+                            <p>Ik wilde erg graag AngularJS gebruiken voor het maken van deze app, maar ik kon nergens een geschikte REST API vinden.
+                                Ik besloot daarna om zelf een API te maken en deze te hosten, maar ik liep tegen allerlei proxy/firewall problemen aan.</p>
                             <p>Nadat ik enkele uren besteed heb om uit te vinden hoe ik dit moest fixen, besloot ik een andere weg te kiezen om dit project zo goed mogelijk af te ronden en zo toch een inkijkje te kunnen geven in mijn vaardigheden.</p>
                             <p>De data is statisch, maar kan door middel van x-Editable (in combinatie met jQuiry UI) gewijzigd worden en vervolgens opgeslagen worden.
                                 Ik heb gebruik gemaakt van het Flexbox Grid systeem en heb vervolgens Isotope gebruikt voor het verwijderen en toevoegen van nieuwe medewerkers. Grunt zorgt ervoor dat alles geminificeerd wordt en ik heb alles met de terminal gecommit naar de GitHub repo.</p>
-                            <p><u>Verbeterpunten</u>: de datumpicker zou makkelijker in gebruik moeten zijn (format en jaar kiezen), eerder in het proces moeten kiezen tussen Flexbox Grid of Isotope (werken niet helemaal goed samen), </p>
+                            <p><u>Verbeterpunten</u>: de datumpicker zou makkelijker in gebruik moeten zijn (format en jaar kiezen), een max zetten op het aantal characters bij de bewerkbare velden en het clonen (Medewerker toevoegen) werkt niet meer als er geen gebruikers meer zijn.</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-lg-2">
                         <div class="box-row">
                             <h4>Facts</h4>
                             <ul>
-                                <li><i class="fa fa-clock-o i-mr" aria-hidden="true"></i>  18 uur</li>
+                                <li><i class="fa fa-clock-o i-mr" aria-hidden="true"></i>  20 uur</li>
                                 <li><i class="fa fa-css3 i-mr" aria-hidden="true"></i>  9 SCSS bestanden</li>
                                 <li><i class="fa fa-file-code-o i-mr" aria-hidden="true"></i>  2 JS bestanden</li>
                                 <li><i class="fa fa-html5 i-mr" aria-hidden="true"></i>  1 HTML bestand</li>
-                                <li><i class="fa fa-github-alt i-mr" aria-hidden="true"></i>  7 commits</li>
+                                <li><i class="fa fa-github-alt i-mr" aria-hidden="true"></i>  15 commits</li>
                             </ul>
                         </div>
                     </div>

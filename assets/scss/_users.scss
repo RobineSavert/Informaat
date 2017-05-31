@@ -9,19 +9,18 @@
     border: dashed $color-five;
     border-width: 0 0 1px 0;
   }
-
-    input {
-      font-family: inherit;
-      &:hover, &:focus {
-        cursor: pointer;
-      }
+  input {
+    font-family: inherit;
+    &:hover, &:focus {
+      cursor: pointer;
     }
-    ul li:last-of-type {
-      font-family: $text-italic;
-      color: $color-five;
-      margin-bottom: $standard-margin;
-    }
-
+  }
+  ul li:last-of-type {
+    font-family: $text-italic;
+    color: $color-five;
+    margin-bottom: $standard-margin;
+    min-height: 160px;
+  }
 }
 
 

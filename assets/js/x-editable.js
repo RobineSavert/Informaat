@@ -4,8 +4,6 @@ $(document).ready(function() {
     $('.editable').editable();
     $('.datepicker-editable').datepicker();
 
-
-
     /*
      //uncomment these lines to send data on server
      ,pk: 1

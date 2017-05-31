@@ -13,11 +13,6 @@
   transition: background-color 0.3s, border-color 0.3s;
   letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
-  @include mq($until: tablet, $and: '(orientation: portrait)') {
-    i {
-      display: none;
-    }
-  }
   &.primary {
     background-color: $color-six;
     color: $color-one;

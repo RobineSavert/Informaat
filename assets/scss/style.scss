@@ -6,12 +6,9 @@
 @import '_type';
 @import '_users';
 
-
-
 * {
   box-sizing: border-box;
 }
-
 
 body {
   font-family: $text;
@@ -32,10 +29,9 @@ ul {
 
 a {
   color: $color-six;
-}
-
-a:hover {
-  color: $color-four;
+  &:hover, &:focus {
+    color: $color-four;
+  }
 }
 
 .i-mr {
@@ -66,10 +62,8 @@ a:hover {
   margin-bottom: 1em;
 }
 
-
-
 header {
-  @include background-image("bg.jpg", center, $color-two, cover);
+  @include background-image("bg.svg", center, $color-two, cover);
   color: $color-one;
   margin-bottom: $standard-margin;
   @include mq($until: tablet, $and: '(orientation: portrait)') {
